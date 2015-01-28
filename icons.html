@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head><title>CSS3 Icons by Rajendra Patil</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="author" content="Rajendra Patil">
+	<meta name="keywords" content="CSS3, psuedo elements, HTML5, ICONS, CSS3 Icons">
+	<style type="text/css">
+	.services a {
+			display: inline-block;
+			width: 30px;
+			height: 30px;
+			text-align: center;
+			line-height: 30px;
+			font-size: 20px;
+			font-family: Helvetica;
+			text-decoration: none;
+			border: 3px solid #eee;
+			color: #FFF;
+			-moz-text-shadow: 0 1px 0 #444;
+			-webkit-text-shadow: 0 1px 0 #444;
+			-o-text-shadow: 0 1px 0 #444;
+			text-shadow: 0 1px 0 #444;
+			-moz-border-radius: 50px;
+			-o-border-radius: 50px;
+			-webkit-border-radius: 50px;
+			border-radius: 50px;
+			-moz-box-shadow: 1px 6px 5px #aaa;
+			-webkit-box-shadow: 1px 6px 5px #aaa;
+			-o-box-shadow: 1px 6px 5px #aaa;
+			box-shadow: 1px 6px 5px #aaa;
+			margin: 8px 10px 0 0;
+			padding: 1px;
+		}
+		#twitter {
+			background-color: #64d8ff;
+			background: #64d8ff -webkit-gradient(radial,50% 50%,50,50% 20%,10,from(transparent),to(#64d8ff));
+		}
+		#linkedin {
+			position: relative;
+			top:-12px;
+			line-height: 32px !important;
+			font-weight: 700;
+			background-color: #197cab;
+			background: #197cab -webkit-gradient(radial,50% 50%,50,50% 0%,10,from(#197cab),to(transparent));
+		}
+		#quora {
+			position: relative;
+			top:-12px;
+			font:22px Courier;
+			background-color: #a82400;
+			background: red -webkit-gradient(radial,50% 50%,50,50% -10%,0,from(#a82400),to(transparent));
+			line-height: 31px !important
+		}
+		#zerply {
+			background-color: #a5d379;
+			background: #a5d379 -webkit-gradient(radial,50% 50%,50,50% 0%,10,from(#a5d379),to(transparent));
+		}
+		#prezi{
+			background-color: ##E4E5DA;
+			background: #E4E5DA -webkit-gradient(radial,50% 50%,50,50% 0%,10,from(#E4E5DA),to(transparent));
+		}
+		.container {
+			padding: 30px 40px;
+		}
+		.ico {
+			width: 25px;
+			height: 25px;
+			position: relative;
+			display:inline-block;
+		}
+		.ico, .services a {
+			-moz-transition: all linear 100ms;
+			-webkit-transition: all linear 200ms;
+			-o-transition: all linear 100ms;
+			-ms-transition: all linear 100ms;
+			transition: all linear 100ms;
+		}
+		.ico:focus, .ico:hover, .services a:hover {
+			-moz-transform: scale(2);
+			-webkit-transform: scale(2);
+			-o-transform: scale(2);
+			-ms-transform: scale(2);
+			transform: scale(2);
+			margin:0 30px;
+			-webkit-box-shadow:0px 4px 8px #f00;
+		}
+/*		.ico:focus:after, .ico:hover:after,	.ico:focus:before, .ico:hover:before{
+			-webkit-box-shadow:0px 1px 10px #f00;
+			
+		}*/
+		.ico:after,.ico:before,.twittert:before,.twittert:after {
+			content: "";
+			display:block;
+			position: relative;
+			width: 0;
+			height: 0;
+		}
+		/* Outer circle */ .aim {
+			border: 4px solid #888;
+			-moz-border-radius: 25px;
+			-webkit-border-radius: 25px;
+			-o-border-radius: 25px;
+			border-radius: 25px;
+			background: #fff;
+		}
+		/* Inner Circle*/ .aim:before {
+			width: 6px;
+			height: 6px;
+			border: 4px solid #888;
+			-moz-border-radius: 16px;
+			-webkit-border-radius: 16px;
+			-o-border-radius: 16px;
+			border-radius: 16px;
+			left: 5px;
+			top: 5px;
+		}
+		/* Arrow */ .aim:after {
+			border: 2px solid transparent;
+			border-top: 22px solid #555;
+			left: 17px;
+			top: -21px;
+			-moz-transform: rotate(45deg);
+			-webkit-transform: rotate(45deg);
+			-o-transform: rotate(45deg);
+			-ms-transform: rotate(45deg);
+			transform: rotate(45deg);
+		}
+		/* sholder */ .prof {
+			width: 2px;
+			height: 0;
+			border: 1px solid #888;
+			-moz-border-radius: 11px 11px 0 0;
+			-webkit-border-radius: 11px 11px 0 0;
+			-o-border-radius: 11px 11px 0 0;
+			border-radius: 11px 11px 0 0;
+			border-width: 12px 16px 2px;
+			margin: 0 5px
+		}
+		/* head */ .prof:before {
+			height: 6px;
+			border: 6px solid #888;
+			-moz-border-radius: 15px;
+			-webkit-border-radius: 15px;
+			-o-border-radius: 15px;
+			border-radius: 15px;
+			left: -5px;
+			top: -29px
+		}
+		/*Tie*/ .prof:after {
+			border: 3px solid transparent;
+			border-bottom: 11px solid #fff;
+			left: -2px;
+			top: -29px
+		}
+		/*Cap top*/ .edu {
+			border: 0 solid #888;
+			width: 0;
+			height: 0;
+			border-width: 2px 18px;
+			position:relative;
+			top:-18px;
+		}
+		/*Cap bottom*/ .edu:before {
+			background: #888;
+			border: 8px solid #888;
+			left: -13px;
+			border-width: 6px 8px;
+			margin: 0 5px
+		}
+		/*Cap right thread*/ .edu:after {
+			border: 2px solid transparent;
+			border-bottom: 18px solid #999;
+			left: 12px;
+			top: -15px
+		}
+
+		/*Tools handle*/ .tech {
+			width: 0;
+			height: 0;
+			border: 4px solid #777;
+			border-width: 12px 3px;
+			-moz-transform: rotate(40deg);
+			-webkit-transform: rotate(40deg);
+			-o-transform: rotate(40deg);
+			-ms-transform: rotate(40deg);
+			transform: rotate(40deg);
+			margin:0 12px;	
+		}
+		/*Tools head*/ .tech:before {
+			border: 8px solid #777;
+			-moz-border-radius: 10px;
+			-webkit-border-radius: 10px;
+			-o-border-radius: 10px;
+			border-radius: 10px;
+			left: -13px;
+			top: -19px;
+			margin: 0 5px
+		}
+		/*Tools square cut*/ .tech:after {
+			border: 3px solid #ccc;
+			left: -8px;
+			top: -36px;
+			margin: 0 5px
+		}
+		/*Desktop Screen*/ .desk {
+			width: 20px;
+			height: 14px;
+			border: 12px solid #888;
+			left: -8px;
+			top: -4px;
+			border-width: 2px 2px 6px;
+			margin: 0 9px
+		}
+		/*CPU*/ .desk:before {
+			background: #fff;
+			width: 6px;
+			height: 2px;
+			border: 7px solid #888;
+			left: 16px;
+			top: -3px;
+			border-width: 6px 2px 21px;
+			margin: 0 25px 0 8px
+		}
+		/*Stand*/ .desk:after {
+			border: 8px solid transparent;
+			border-bottom: 7px solid #888;
+			left: 2px;
+			top: -19px
+		}
+		/*Circle*/ .oth {
+			width: 0;
+			height: 0;
+			border: 14px solid #888;
+			margin: 0 8px;
+			-moz-border-radius: 20px;
+			-webkit-border-radius: 20px;
+			-o-border-radius: 20px;
+			
+		}
+		/*Circle*/ .oth:before {
+			border: 12px solid #666;
+			left: -19px;
+			top: -18px;
+/*			-moz-transform: rotate(-15deg);
+			-webkit-transform: rotate(-15deg);
+			-o-transform: rotate(-15deg);
+			-ms-transform: rotate(-15deg);
+			transform: rotate(-15deg);*/
+			border-width: 10px;
+			-moz-border-radius: 10px;
+			-webkit-border-radius: 10px;
+			-o-border-radius: 10px;
+		}
+		/*Circle*/ .oth:after {
+			border: 8px solid #eee;
+			left: -10px;
+			top: -17px;
+/*			-moz-transform: rotate(10deg);
+			-webkit-transform: rotate(10deg);
+			-o-transform: rotate(10deg);
+			-ms-transform: rotate(10deg);
+			transform: rotate(10deg);*/
+			border-width: 8px;
+			border-width: 8px;
+			-moz-border-radius: 8px;
+			-webkit-border-radius: 8px;
+			-o-border-radius: 8px;
+			
+			margin: 0 9px
+		}
+		.twittert {
+			margin-top: 5px;
+			margin-left: 8px;
+			background: #64d8ff;
+			height: 15px;
+			width: 3px;
+			border: 2px solid #fff;
+			-moz-border-radius: 50px 50px 0 100px;
+			-webkit-border-radius: 50px 50px 0 100px;
+			-o-border-radius: 50px 50px 0 100px;
+			border-radius: 50px 50px 0 100px
+		}
+		.twittert:before,.twittert:after {
+			background: #64d8ff;
+			-moz-border-radius: 0 50px 50px 0;
+			-webkit-border-radius: 0 50px 50px 0;
+			-o-border-radius: 0 50px 50px 0;
+			border-radius: 0 50px 50px 0;
+			border: 2px solid #fff;
+			border-left: 0;
+			width: 8px;
+			height: 3px;
+			left: 3px;
+			display: block;
+			top: 3px
+		}
+		.zerplyZ,.zerplyZ:after,.zerplyZ:before {
+			position: relative;
+			background: #fff;
+			border: 1px solid #fff;
+			display: block
+		}
+		.zerplyZ {
+			top: 5px;
+			left: 10px;
+			width: 9px;
+			height: 2px;
+			-moz-border-radius: 5px 0 30px 10px;
+			-webkit-border-radius: 5px 0 30px 10px;
+			-o-border-radius: 5px 0 30px 10px;
+			border-radius: 5px 0 30px 10px;
+			-moz-transform: rotate(6deg);
+			-webkit-transform: rotate(6deg);
+			-o-transform: rotate(6deg);
+			-ms-transform: rotate(6deg);
+			transform: rotate(6deg)
+		}
+		.zerplyZ:before,.zerplyZ:after {
+			content: ""
+		}
+		.zerplyZ:before {
+			width: 1px;
+			height: 15px;
+			top: -1px;
+			left: 2px;
+			-moz-border-radius: 50px 0 0 19px;
+			-webkit-border-radius: 50px 0 0 19px;
+			-o-border-radius: 50px 0 0 19px;
+			border-radius: 50px 0 0 19px;
+			-moz-transform: rotate(36deg);
+			-webkit-transform: rotate(36deg);
+			-o-transform: rotate(36deg);
+			-ms-transform: rotate(36deg);
+			transform: rotate(36deg);
+			border-top: 0
+		}
+		.zerplyZ:after {
+			width: 2px;
+			height: 15px;
+			top: -11px;
+			left: 5px;
+			-moz-border-radius: 0 50px;
+			-webkit-border-radius: 0 50px;
+			-o-border-radius: 0 50px;
+			border-radius: 0 50px;
+			-moz-transform: rotate(110deg);
+			-webkit-transform: rotate(110deg);
+			-o-transform: rotate(110deg);
+			-ms-transform: rotate(110deg);
+			transform: rotate(110deg);
+			border-bottom: 0
+		}
+		.preziPlay{
+			width:18px;
+			height:18px;
+			background:#4C94C2;
+			border-radius:5px 5px 0 5px;
+			left:6px;
+			top:5px;
+			position:relative;
+		}
+		.preziPlay:before{
+			border: 6px solid transparent;
+			border-left: 6px solid #fff;
+			content: "";
+			display:block;
+			position:relative;
+			left:3px;
+			top:3px;
+		}
+		.preziPlay:after{
+			width:0px;
+			height:0px;
+			content: "";
+			display:block;
+			position:relative;
+			left:12px;
+			top:3px;
+			border: 3px solid transparent;
+			border-right: 3px solid #4C94C2;
+
+		}
+		.infoi{
+			width: 22px;
+			height: 22px;
+			background: #888;
+			border: 1px solid #666;
+			-moz-border-radius: 20px;
+			-webkit-border-radius: 20px;
+			-o-border-radius: 20px;
+			border-radius: 20px;
+			padding: 2px;
+			position:relative;
+			top:-10px;
+		}
+		.infoi:before {
+			content: "i";
+			font: italic 12px Cusrive;
+			line-height:20px;
+			color: #fff;
+			left:9px;
+		}
+		body{
+			padding:10px auto;
+			margin:100px auto;
+				background: #eee;
+		}
+		.container{
+			width:700px;
+			text-align:center;
+			margin:0 auto;
+			background: #ccc;
+			border: 1px solid #444;
+			-moz-border-radius: 15px;
+			-webkit-border-radius: 15px;
+			-o-border-radius: 15px;
+			border-radius: 15px;
+			height:300px;
+		}
+		.others{
+			border-bottom:1px solid gray;
+		}
+		.print{
+			width:30px;
+			height:12px;
+			border:2px solid #888;
+			-moz-border-radius: 5px;
+			-webkit-border-radius: 5px;
+			-o-border-radius: 5px;
+			border-radius: 5px;
+		}
+		.print:before{
+			content:"";
+			width:18px;
+			height:8px;
+			background:#fff;
+			border:1px solid #aaa;
+			top:-9px;
+			left:5px;
+		}
+		.print:after{
+			content:"";
+			width:18px;
+			height:7px;
+			background:#888;
+			top:-2px;
+			left:6px;
+		}
+		.laptop{
+			width:30px;
+			height:16px;
+			border:1px solid #888;
+			top:-5px;
+			margin:0 5px;
+		}
+		.laptop:before{
+				width:30px;
+				border: 6px solid transparent;
+				border-bottom: 4px solid #aaa;
+				left:-6px;
+				top:11px;
+		}
+		.laptop:after{
+			height:1px;
+			width:6px;
+			background:#fff;
+			border:1px solid #888;
+			border-width:0px 18px 1px 18px; 
+			top:11px;
+			left:-6px;
+		}
+		.title{
+			margin:30px auto;
+			width:700px;
+			text-align:center;
+			color:#666;
+		}
+			
+	</style>
+	</head>
+	<body> 
+		<div class="title"><h3>Pure CSS3 Icons</h3>  an experiment with pseudo elements</div>
+		<div class="container"> 
+			<hr/>
+			<div class="others">
+				<div class="aim ico"></div>  
+				<div class="edu ico"></div>  
+				<div class="prof ico"></div>  
+				<div class="tech ico"></div>  
+				<div class="desk ico"></div>  
+				<div class="infoi ico"></div>  
+				<div class="oth ico"></div>  
+				<div class="print ico"></div>  
+				<div class="laptop ico"></div>  
+			</div>	
+			<div class="services">
+				<a title="twitter: @rrpatil26" href="http://twitter.com/rrpatil26" id="twitter"><div class="twittert"></div></a>
+				<a title="Linkedin:linkedin.com/in/rajendrapatil" href="http://www.linkedin.com/in/rajendrapatil" id="linkedin">in</a>
+				<a title="Quora:quora.com/Rajendra-Patil" href="http://www.quora.com/Rajendra-Patil" id="quora">Q</a>
+				<a href="#" title="Zerply:zerply.com"  id="zerply"><div class="zerplyZ"></div></a>
+				<a href="prezi.com" id="prezi" title="Prezi resume: Prezi.com"><div class="preziPlay"></div></a><div style="clear:both"></div>
+			</div>	
+		</div>
+	</body>
+</html>
